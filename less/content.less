@@ -20,12 +20,22 @@
     .about-img {
       width: 30%;
       margin: 0 20px;
+
+      @media (max-width: 500px) {
+        width: 100%;
+        margin: 20px 0;
+      }
     }
 
     .about-second {
       display: flex;
       justify-content: center;
+      align-items: center;
       margin: 20px 0;
+
+      @media (max-width: 500px) {
+        flex-flow: column;
+      }
     }
   }
 }
@@ -43,6 +53,10 @@
     align-items: center;
     width: 80%;
 
+    @media (max-width: 500px) {
+      width: 90%;
+    }
+
     .content {
       width: 60%;
       padding: 30px;
@@ -50,6 +64,11 @@
       border: 2px solid black;
       margin: 20px;
       background-color: #9fa8da;
+
+      @media (max-width: 500px) {
+        width: 100%;
+        margin: 20px 5%;
+      }
     }
 
     .content-title {
@@ -59,6 +78,10 @@
 
     .content-img {
       border-radius: 50%;
+
+      @media (max-width: 500px) {
+        display: none;
+      }
     }
   }
 
