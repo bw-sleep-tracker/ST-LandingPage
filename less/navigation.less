@@ -11,7 +11,7 @@
     flex-flow: column;
     .title-and-logo{
         display: flex;
-        flex-flow: column-wrap;
+        flex-flow: column;
         justify-content: space-between;
         @media(max-width: 500px) {
             flex-flow: column-reverse;
@@ -24,8 +24,9 @@
             font-family: Arial;
 
             @media(max-width: 500px) {
-                font-size: 5rem;
-                margin-left: 25%;
+                font-size: 8rem;
+                margin: auto;
+                text-align: center;
             }
         }
         img{
@@ -35,6 +36,8 @@
             @media(max-width: 500px) {
                 width: 20%;
                 height: auto;
+                margin: auto;
+                margin-bottom: 5%;
             }
         }
     }
@@ -56,6 +59,7 @@
             font-style: italic;
             text-align: right;
              @media(max-width: 500px){
+                 margin-top: 5%;
                  font-size: 3rem;
                  text-align: center;
              }
@@ -68,16 +72,31 @@
         margin-top: 10%;
         width: 100%;
 
+        @media(max-width: 500px) {
+            border-top: none;
+        }
+
         .nav{
             width: 50%;
             display: flex;
             justify-content: space-between;
             margin-top: 2%;
+            @media(max-width: 500px) {
+                width: 100%;
+                flex-flow: column;
+            }
             a{
                 font-size: 3rem;
                 color: @muted-yellow;
                 text-decoration: none;
                 font-style: italic;
+
+                @media(max-width: 500px) {
+                    font-size: 3rem;
+                    margin: auto;
+                    padding-top: 10%;
+                    padding-bottom: 10%;
+                }
             }
             a:hover{
                 color: white;

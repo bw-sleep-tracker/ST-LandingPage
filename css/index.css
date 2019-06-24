@@ -177,7 +177,7 @@ img {
 }
 .header .title-and-logo {
   display: flex;
-  flex-flow: column-wrap;
+  flex-flow: column;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
@@ -194,8 +194,9 @@ img {
 }
 @media (max-width: 500px) {
   .header .title-and-logo h1 {
-    font-size: 5rem;
-    margin-left: 25%;
+    font-size: 8rem;
+    margin: auto;
+    text-align: center;
   }
 }
 .header .title-and-logo img {
@@ -206,6 +207,8 @@ img {
   .header .title-and-logo img {
     width: 20%;
     height: auto;
+    margin: auto;
+    margin-bottom: 5%;
   }
 }
 .header .h2 {
@@ -231,6 +234,7 @@ img {
 }
 @media (max-width: 500px) {
   .header .h2 h2 {
+    margin-top: 5%;
     font-size: 3rem;
     text-align: center;
   }
@@ -240,17 +244,36 @@ img {
   margin-top: 10%;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .header .bottom-line {
+    border-top: none;
+  }
+}
 .header .bottom-line .nav {
   width: 50%;
   display: flex;
   justify-content: space-between;
   margin-top: 2%;
 }
+@media (max-width: 500px) {
+  .header .bottom-line .nav {
+    width: 100%;
+    flex-flow: column;
+  }
+}
 .header .bottom-line .nav a {
   font-size: 3rem;
   color: #fcdf3d;
   text-decoration: none;
   font-style: italic;
+}
+@media (max-width: 500px) {
+  .header .bottom-line .nav a {
+    font-size: 3rem;
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
 }
 .header .bottom-line .nav a:hover {
   color: white;
