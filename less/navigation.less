@@ -11,8 +11,9 @@
     flex-flow: column;
     .title-and-logo{
         display: flex;
-        flex-flow: column;
+        flex-flow: row;
         justify-content: space-between;
+
         
         @media(max-width: 800px) {
             border-bottom: .5rem solid @muted-yellow;
@@ -46,6 +47,10 @@
         img{
             width: 35%;
             height: auto;
+
+            @media(max-width: 1175px) {
+                display: none;
+            }
 
             @media(max-width: 800px) {
                 width: 15%;
