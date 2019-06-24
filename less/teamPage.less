@@ -27,6 +27,8 @@ body{
 nav{
     justify-items: center;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 nav a{
     font-size: 2rem;
@@ -34,31 +36,54 @@ nav a{
     margin-right: 20px;
     text-decoration: none;
     color: white;
+    border-bottom: white solid 1px;
 }
 
 .content{
-    // background-color: #9fa8da; 
-    border: 2px solid white;
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
+    background-color: #9fa8da; 
+    // border: 2px solid black;
+    border-radius: 10px;
+    color: Black;
+    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
+    align-items: center;
+    max-width: 50%;
         a{
             margin: 10px;
             flex-flow: row;
+            align-self: center;
         }
         h3{
+            padding-top: 5px;
+            padding-bottom: 15px;
+            justify-content: center;
             font-size: 2rem;
             margin-left: 20px;
             margin-right: 20px;
             text-decoration: none;
-            color: white;
+            color: black;
     }
+        p{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        img{
+            size: 5%;
+            padding: 20px;
+        }
 }
 
 .content-block{
     margin: 20px;
-    // columns: 2;
+    display: flex;
+    flex-flow: row;
     text-align: center;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
 }
