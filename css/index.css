@@ -172,3 +172,35 @@ img {
   display: flex;
   flex-flow: column-wrap;
 }
+.main-content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 20px auto;
+  background-color: #424242;
+  padding: 40px 0;
+}
+.main-content .content-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.main-content .content-block .content {
+  width: 60%;
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin: 20px;
+  background-color: #9fa8da;
+}
+.main-content .content-block .content-title {
+  font-size: 2.4rem;
+  margin: 15px 0;
+}
+.main-content .content-block .content-img {
+  border-radius: 50%;
+}
+.main-content .content-block-reverse {
+  flex-direction: row-reverse;
+}
