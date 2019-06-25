@@ -1,32 +1,44 @@
 .about {
   .flex();
-  background-color: @dark-purple;
-  padding: 40px 0;
+  background-color: @medium-gray;
+  padding: 20px 2%;
+  color: @dark-gray;
 
   .about-block {
     .flex(column);
     width: 80%;
     max-width: 1000px;
+    border-radius: 20px;
+    padding: 40px;
 
-    .about-content {
-      padding: 30px;
+    @media (max-width: 1000px) {
+      width: 85%;
     }
 
     .about-title {
-      font-size: 2.4rem;
+      font-size: 4.8rem;
       margin: 15px 0;
+      padding: 20px 0;
+      border-bottom: 4px solid @darker-purple;
+      text-align: center;
+      font-weight: bolder;
+      color: black;
     }
 
-    .about-text {
-      font-size: 1.8rem;
+    .about-content {
+      
+      .about-text {
+        font-size: 1.8rem;
+      }
     }
 
     .about-img {
-      width: 40%;
       margin: 0 20px;
+      border-radius: 10px;
+      max-width: 40%;
 
-      @media (max-width: 800px) {
-        width: 100%;
+      @media @tablet {
+        max-width: 100%;
         margin: 20px 0;
       }
     }
@@ -35,7 +47,7 @@
       .flex();
       margin: 20px 0;
 
-      @media (max-width: 800px) {
+      @media @tablet {
         flex-flow: column;
       }
     }
@@ -45,23 +57,22 @@
 .main-content {
   .flex(column);
   background-color: @dark-gray;
-  padding: 40px 0;
+  padding: 20px 2%;
 
   .content-block {
     .flex();
     max-width: 1000px;
     width: 80%;
+    padding-bottom: 20px;
 
     @media (max-width: 1000px) {
-      width: 90%;
+      width: 85%;
     }
 
     .content {
       width: 60%;
-      padding: 30px;
-      border-radius: 20px;
-      margin: 20px;
-      background-color: @dark-purple;
+      color: @medium-gray;
+      padding: 20px 40px;
 
       .content-text {
         font-size: 1.8rem;
@@ -69,17 +80,20 @@
 
       @media (max-width: 1000px) {
         width: 100%;
-        margin: 20px 5%;
       }
     }
 
     .content-title {
       font-size: 2.4rem;
       margin: 15px 0;
+      color: @white;
+      padding-bottom: 20px;
+      border-bottom: 4px solid @dark-purple;
     }
 
     .content-img {
       border-radius: 50%;
+      padding: 5px 5%;
 
       @media (max-width: 1000px) {
         display: none;
