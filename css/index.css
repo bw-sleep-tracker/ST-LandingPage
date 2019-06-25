@@ -347,14 +347,15 @@ img {
 }
 .about {
   display: flex;
-  flex-flow: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   background-color: #9fa8da;
   padding: 40px 0;
 }
 .about .about-block {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 80%;
@@ -382,6 +383,7 @@ img {
 }
 .about .about-block .about-second {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
@@ -393,13 +395,15 @@ img {
 }
 .main-content {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #424242;
   padding: 40px 0;
 }
 .main-content .content-block {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   max-width: 1000px;
