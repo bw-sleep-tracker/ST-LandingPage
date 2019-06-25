@@ -261,7 +261,7 @@ img {
   }
 }
 .header .h2 h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
@@ -285,7 +285,7 @@ img {
 }
 .header .bottom-line {
   border-top: 0.5rem solid #9fa8da;
-  margin-top: 10%;
+  margin-top: 5%;
   width: 100%;
 }
 @media (max-width: 800px) {
@@ -344,6 +344,19 @@ img {
 }
 .all-header {
   margin: 10%;
+}
+footer {
+  background-color: #9fa8da;
+  color: white;
+  height: 10%;
+}
+footer .foot {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+footer .foot p {
+  font-size: 2rem;
 }
 .about {
   display: flex;
