@@ -345,6 +345,19 @@ img {
 .all-header {
   margin: 10%;
 }
+footer {
+  background-color: #9fa8da;
+  color: white;
+  height: 10%;
+}
+footer .foot {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+footer .foot p {
+  font-size: 2rem;
+}
 .about {
   display: flex;
   flex-flow: column;
