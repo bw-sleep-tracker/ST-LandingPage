@@ -12,15 +12,17 @@
     padding: 40px;
 
     @media (max-width: 1000px) {
-      width: 90%;
+      width: 85%;
     }
 
     .about-title {
       font-size: 4.8rem;
       margin: 15px 0;
-      padding-bottom: 20px;
+      padding: 20px 0;
       border-bottom: 4px solid @darker-purple;
       text-align: center;
+      font-weight: bolder;
+      color: black;
     }
 
     .about-content {
@@ -33,9 +35,10 @@
     .about-img {
       margin: 0 20px;
       border-radius: 10px;
+      max-width: 40%;
 
       @media @tablet {
-        width: 100%;
+        max-width: 100%;
         margin: 20px 0;
       }
     }
@@ -60,16 +63,16 @@
     .flex();
     max-width: 1000px;
     width: 80%;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 
     @media (max-width: 1000px) {
-      width: 90%;
+      width: 85%;
     }
 
     .content {
       width: 60%;
       color: @medium-gray;
-      padding: 40px;
+      padding: 20px 40px;
 
       .content-text {
         font-size: 1.8rem;
