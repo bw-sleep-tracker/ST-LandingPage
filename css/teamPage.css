@@ -141,7 +141,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Roboto';
 }
 h1 {
   font-size: 4rem;
@@ -172,10 +172,10 @@ body {
   background-color: #424242;
 }
 .title {
-  font-size: 5rem;
+  font-size: 7rem;
   margin: 20px;
   text-decoration: none;
-  color: white;
+  color: #9fa8da;
   text-align: center;
 }
 nav {
@@ -185,12 +185,13 @@ nav {
   padding-bottom: 10px;
 }
 nav a {
+  font-family: sans-serif;
   font-size: 2rem;
   margin-left: 20px;
   margin-right: 20px;
   text-decoration: none;
-  color: white;
-  border-bottom: white solid 1px;
+  color: #fcdf3d;
+  font-style: italic;
 }
 .content {
   background-color: #9fa8da;
@@ -203,6 +204,11 @@ nav a {
   align-items: center;
   max-width: 50%;
 }
+@media (max-width: 800px) {
+  .content {
+    max-width: 100%;
+  }
+}
 .content a {
   margin: 10px;
   flex-flow: row;
@@ -212,13 +218,14 @@ nav a {
   padding-top: 5px;
   padding-bottom: 15px;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-left: 20px;
   margin-right: 20px;
   text-decoration: none;
   color: black;
 }
 .content p {
+  font-size: 2rem;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -232,6 +239,11 @@ nav a {
   flex-flow: row;
   text-align: center;
   justify-content: center;
+}
+@media (max-width: 800px) {
+  .content-block {
+    flex-flow: column;
+  }
 }
 footer {
   display: flex;
