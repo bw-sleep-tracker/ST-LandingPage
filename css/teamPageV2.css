@@ -171,3 +171,51 @@ img {
 body {
   background-color: darkgrey;
 }
+header {
+  background-color: #9fa8da;
+  column-count: 2;
+}
+header .title {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  font-size: 5rem;
+  text-decoration: none;
+  justify-content: flex-start;
+}
+header nav {
+  padding: 10px 10px 10px 10px;
+  text-align: right;
+}
+header nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+section {
+  display: flex;
+  justify-content: center;
+}
+section .content-block {
+  max-width: 80%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+section .content-block .left-content {
+  align-items: center;
+  min-width: 200px;
+  display: flex;
+  flex-flow: column;
+}
+section .content-block .left-content .pfp {
+  max-width: 50%;
+}
+section .content-block .right-content {
+  display: flex;
+}
+section .content-block .right-content p {
+  text-align: center;
+}
