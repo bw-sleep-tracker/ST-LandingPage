@@ -201,7 +201,7 @@ img {
   font-size: 12rem;
   color: #9fa8da;
   font-style: italic;
-  font-family: Arial;
+  font-family: 'Abril Fatface';
 }
 @media (max-width: 800px) {
   .header .all-header .title-and-logo h1 {
