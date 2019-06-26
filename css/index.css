@@ -420,11 +420,13 @@ footer .foot p {
 .about .about-block .about-img {
   margin: 0 20px;
   border-radius: 10px;
-  max-width: 40%;
+  width: 30%;
+  height: 300px;
+  object-fit: cover;
 }
 @media (max-width: 800px) {
   .about .about-block .about-img {
-    max-width: 100%;
+    width: 100%;
     margin: 20px 0;
   }
 }
@@ -482,12 +484,17 @@ footer .foot p {
   padding-bottom: 20px;
   border-bottom: 4px solid #9fa8da;
 }
-.main-content .content-block .content-img {
-  border-radius: 50%;
+.main-content .content-block .content-second {
+  width: 40%;
+}
+.main-content .content-block .content-second .content-img {
+  border-radius: 10%;
   padding: 5px 5%;
+  height: 300px;
+  object-fit: cover;
 }
 @media (max-width: 1000px) {
-  .main-content .content-block .content-img {
+  .main-content .content-block .content-second .content-img {
     display: none;
   }
 }

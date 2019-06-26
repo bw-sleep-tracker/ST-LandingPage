@@ -35,10 +35,12 @@
     .about-img {
       margin: 0 20px;
       border-radius: 10px;
-      max-width: 40%;
+      width: 30%;
+      height: 300px;
+      object-fit: cover;
 
       @media @tablet {
-        max-width: 100%;
+        width: 100%;
         margin: 20px 0;
       }
     }
@@ -91,12 +93,18 @@
       border-bottom: 4px solid @dark-purple;
     }
 
-    .content-img {
-      border-radius: 50%;
-      padding: 5px 5%;
+    .content-second {
+      width: 40%;
 
-      @media (max-width: 1000px) {
-        display: none;
+      .content-img {
+        border-radius: 10%;
+        padding: 5px 5%;
+        height: 300px;
+        object-fit: cover;
+
+        @media (max-width: 1000px) {
+          display: none;
+        }
       }
     }
   }
