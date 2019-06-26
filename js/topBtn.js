@@ -1,21 +1,20 @@
-const topBtn = document.querySelector('#top-btn');
-const more = document.querySelector('.bottom-line a');
-const abt = document.querySelector('.about');
-console.log(topBtn);
+var tBtn = document.querySelector('#top-btn');
+var  more = document.querySelector('.bottom-line a');
+var abt = document.querySelector('.about');
 
 window.addEventListener('scroll', open);
 
 function open(){
     if(window.pageYOffset > 100){
-        topBtn.style.display = "block";
+        tBtn.style.display = "block";
 
     }
     else{
-        topBtn.style.display = "none";
+        tBtn.style.display = "none";
     }
 }
 
-topBtn.addEventListener('click', ()=>{
+tBtn.addEventListener('click', ()=>{
     window.scrollTo({
         top: 0,
         left: 0,
