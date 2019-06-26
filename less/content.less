@@ -35,10 +35,12 @@
     .about-img {
       margin: 0 20px;
       border-radius: 10px;
-      max-width: 40%;
+      width: 30%;
+      height: 300px;
+      object-fit: cover;
 
       @media @tablet {
-        max-width: 100%;
+        width: 100%;
         margin: 20px 0;
       }
     }
@@ -51,6 +53,15 @@
         flex-flow: column;
       }
     }
+  }
+}
+
+.modal-img {
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.7;
   }
 }
 
@@ -67,6 +78,7 @@
 
     @media (max-width: 1000px) {
       width: 85%;
+      flex-flow: column wrap;
     }
 
     .content {
@@ -91,12 +103,19 @@
       border-bottom: 4px solid @dark-purple;
     }
 
-    .content-img {
-      border-radius: 50%;
-      padding: 5px 5%;
+    .content-second {
+      width: 40%;
+
+      .content-img {
+        border-radius: 10%;
+        padding: 5px 5%;
+        height: 300px;
+        object-fit: cover;
+      }
 
       @media (max-width: 1000px) {
-        display: none;
+        width: 90%;
+        text-align: center;
       }
     }
   }
@@ -104,4 +123,62 @@
   .content-block-reverse {
     flex-direction: row-reverse;
   }
+}
+
+.content-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+
+  .selected-modal-img {
+    margin: auto;
+    display: block;
+    max-width: 800px;
+    max-height: 80%;
+
+    @media @tablet {
+      max-width: 80%;
+    }
+  }
+
+  .selected-modal-img {
+    animation: 0.6s zoom;
+  }
+
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: @medium-gray;
+    font-size: 4rem;
+    font-weight: bold;
+    transition: 0.3s;
+
+    &:hover, &:focus {
+      color: @dark-gray;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.content-modal-active {
+  display: block;
 }
