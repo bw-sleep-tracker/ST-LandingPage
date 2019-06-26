@@ -455,6 +455,13 @@ footer .foot p {
     flex-flow: column;
   }
 }
+.modal-img {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.modal-img:hover {
+  opacity: 0.7;
+}
 .main-content {
   display: flex;
   flex-direction: column;
@@ -513,4 +520,58 @@ footer .foot p {
 }
 .main-content .content-block-reverse {
   flex-direction: row-reverse;
+}
+.content-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.content-modal .selected-modal-img {
+  margin: auto;
+  display: block;
+  max-width: 800px;
+  max-height: 80%;
+}
+@media (max-width: 800px) {
+  .content-modal .selected-modal-img {
+    max-width: 80%;
+  }
+}
+.content-modal .selected-modal-img,
+.content-modal .modal-caption {
+  animation: 0.6s zoom;
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.content-modal .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #A9A9A9;
+  font-size: 4rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.content-modal .close:hover,
+.content-modal .close:focus {
+  color: #424242;
+  text-decoration: none;
+  cursor: pointer;
+}
+.content-modal-active {
+  display: block;
 }
