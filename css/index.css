@@ -482,6 +482,7 @@ footer .foot p {
 @media (max-width: 1000px) {
   .main-content .content-block {
     width: 85%;
+    flex-flow: column wrap;
   }
 }
 .main-content .content-block .content {
@@ -514,8 +515,9 @@ footer .foot p {
   object-fit: cover;
 }
 @media (max-width: 1000px) {
-  .main-content .content-block .content-second .content-img {
-    display: none;
+  .main-content .content-block .content-second {
+    width: 90%;
+    text-align: center;
   }
 }
 .main-content .content-block-reverse {
@@ -545,8 +547,7 @@ footer .foot p {
     max-width: 80%;
   }
 }
-.content-modal .selected-modal-img,
-.content-modal .modal-caption {
+.content-modal .selected-modal-img {
   animation: 0.6s zoom;
 }
 @keyframes zoom {
