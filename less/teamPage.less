@@ -9,7 +9,8 @@
 body {
     background-color: #424242;
 }
-header{
+
+header {
     background-color: #9fa8da;
 }
 
@@ -23,8 +24,8 @@ header{
     background-color: #9fa8da;
     text-align: center;
     border-bottom: white solid 3px;
-    text-shadow: horizontal-offset vertical-offset blur color;	
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    text-shadow: horizontal-offset vertical-offset blur color;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -61,6 +62,7 @@ nav a {
     color: #fcdf3d;
     font-style: italic;
     padding: 5px;
+
     // background-color: #9fa8da;
     @media (max-width: 800px) {
         margin-top: 10px;
@@ -71,6 +73,7 @@ nav a {
 
 .content-block {
     // max-width: 75%;
+    min-width: 200px;
     padding-left: 10%;
     padding-right: 10%;
     // margin: 50px;
@@ -78,7 +81,20 @@ nav a {
     flex-flow: row;
     text-align: center;
     justify-content: center;
+    @media (max-width: 1150px) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    @media (max-width: 800px) {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+
     .content {
+        box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+        position: relative;
+        min-width: 30%;
         margin: 10%;
         background-color: white;
         // border: 2px solid black;
@@ -88,19 +104,20 @@ nav a {
         padding-top: 20px;
         // padding-bottom: 20px;
         display: flex;
-        align-items: center;
+        // align-items: center;
         max-width: 50%;
+
+        // @media (max-width: 1150px) {
+        //     padding-left: 5%;
+        //     padding-right: 5%;
+        // }
 
         @media (max-width: 800px) {
             max-width: 100%;
         }
 
         a {
-            font-size: 2.4rem;
-            font-family: 'Roboto';
-            margin: 10px;
-            flex-flow: row;
-            align-self: center;
+            text-decoration: none;
         }
 
         h3 {
@@ -118,7 +135,7 @@ nav a {
         }
 
         p {
-            font-size: 2rem;
+            font-size: 1.75rem;
             padding-top: 20px;
             padding-left: 20px;
             padding-right: 20px;
@@ -126,13 +143,14 @@ nav a {
         }
 
         img {
-            size: 2%;
-            padding: 10px;
+            max-width: 75%;
+            
         }
 
 
         // .bcontent-icons {
         //     background-color: darkgrey;
+        //     background-color: #9fa8da;
         // }
 
 
@@ -143,7 +161,42 @@ nav a {
     }
 }
 
+
+
 footer {
     display: flex;
     justify-content: center;
+    background-color: #9fa8da;
+        // p{
+        //     padding-bottom: 
+        // }
 }
+
+.collapsible {
+    background-color: white;
+    padding: 18px;
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color: black;
+	// font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+  }
+  
+  .active, .collapsible:hover {
+    background-color:#f6f6f6;
+  }
+  
+  .content-toggle {
+    display: hidden;
+    overflow: hidden;
+  }

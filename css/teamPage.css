@@ -220,6 +220,7 @@ nav a {
   }
 }
 .content-block {
+  min-width: 200px;
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
@@ -227,7 +228,22 @@ nav a {
   text-align: center;
   justify-content: center;
 }
+@media (max-width: 1150px) {
+  .content-block {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 800px) {
+  .content-block {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
 .content-block .content {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  min-width: 30%;
   margin: 10%;
   background-color: white;
   border-radius: 10px;
@@ -235,7 +251,6 @@ nav a {
   margin: 30px;
   padding-top: 20px;
   display: flex;
-  align-items: center;
   max-width: 50%;
 }
 @media (max-width: 800px) {
@@ -244,11 +259,7 @@ nav a {
   }
 }
 .content-block .content a {
-  font-size: 2.4rem;
-  font-family: 'Roboto';
-  margin: 10px;
-  flex-flow: row;
-  align-self: center;
+  text-decoration: none;
 }
 .content-block .content h3 {
   letter-spacing: 1px;
@@ -264,14 +275,13 @@ nav a {
   border-bottom: 1px black solid;
 }
 .content-block .content p {
-  font-size: 2rem;
+  font-size: 1.75rem;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
 }
 .content-block .content img {
-  size: 2%;
-  padding: 10px;
+  max-width: 75%;
 }
 @media (max-width: 800px) {
   .content-block {
@@ -281,4 +291,30 @@ nav a {
 footer {
   display: flex;
   justify-content: center;
+  background-color: #9fa8da;
+}
+.collapsible {
+  background-color: white;
+  padding: 18px;
+  width: 100%;
+  outline: none;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.active,
+.collapsible:hover {
+  background-color: #f6f6f6;
+}
+.content-toggle {
+  display: hidden;
+  overflow: hidden;
 }
