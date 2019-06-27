@@ -179,6 +179,79 @@ img {
   width: 75%;
   margin: auto;
 }
+.header .all-header .signBtn {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 33%;
+}
+@media (max-width: 800px) {
+  .header .all-header .signBtn {
+    flex-flow: column;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .header .all-header .signBtn {
+    flex-flow: column;
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+  }
+}
+.header .all-header .signBtn #sign-up {
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #fcdf3d;
+  color: #424242;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 4rem;
+  margin: 0, auto;
+}
+@media (max-width: 800px) {
+  .header .all-header .signBtn #sign-up {
+    padding: 20px;
+    border-radius: 5x;
+    font-size: 2rem;
+    margin-top: 4%;
+    margin-bottom: 3%;
+  }
+}
+.header .all-header .signBtn #sign-up:hover {
+  color: black;
+  background-color: white;
+}
+.header .all-header .signBtn #sign-in {
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #6f78a8;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 4rem;
+  margin: 0, auto;
+}
+@media (max-width: 800px) {
+  .header .all-header .signBtn #sign-in {
+    margin-top: 5%;
+    padding: 20px;
+    border-radius: 5x;
+    font-size: 2rem;
+    margin-top: 4%;
+    margin-bottom: 3%;
+  }
+}
+.header .all-header .signBtn #sign-in:hover {
+  color: black;
+  background-color: white;
+}
 .header .all-header .title-and-logo {
   display: flex;
   flex-flow: row;
@@ -236,38 +309,6 @@ img {
     margin: auto;
     margin-bottom: 5%;
   }
-}
-.header .all-header #sign-up {
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #6f78a8;
-  color: white;
-  cursor: pointer;
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 4rem;
-  margin: 0, auto;
-}
-@media (max-width: 800px) {
-  .header .all-header #sign-up {
-    margin-top: 5%;
-    padding: 20px;
-    border-radius: 5x;
-    font-size: 2rem;
-    margin-top: 4%;
-    margin-bottom: 3%;
-    margin-left: 40%;
-  }
-}
-@media (max-width: 500px) {
-  .header .all-header #sign-up {
-    margin-left: 33%;
-  }
-}
-.header .all-header #sign-up:hover {
-  color: black;
-  background-color: white;
 }
 .header .all-header .h2 {
   display: flex;
