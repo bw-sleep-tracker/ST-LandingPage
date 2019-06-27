@@ -20,10 +20,10 @@ header {
     font-size: 7rem;
     font-style: italic;
     font-weight: bold;
-    color: black;
-    background-color: #9fa8da;
+    color: #9fa8da;
+    background-color: #424242;
     text-align: center;
-    border-bottom: white solid 3px;
+    border-bottom: 0.5rem solid #6f78a8;
     text-shadow: horizontal-offset vertical-offset blur color;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
@@ -37,7 +37,9 @@ header {
 
 nav {
     // display: flex;
-    justify-items: center;
+    max-width: 100%;
+    // justify-items: center;
+    // text-align: center;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -55,7 +57,7 @@ nav a {
     justify-items: center;
     text-align: center;
     font-family: sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-left: 20px;
     margin-right: 20px;
     text-decoration: none;
@@ -95,6 +97,7 @@ nav a {
         box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
         position: relative;
         min-width: 30%;
+        height: 100%;
         margin: 10%;
         background-color: white;
         // border: 2px solid black;
@@ -103,13 +106,13 @@ nav a {
         margin: 30px;
         padding-top: 20px;
         // padding-bottom: 20px;
-        display: flex;
-        // align-items: center;
+        // display: flex;
+        align-items: center;
         max-width: 50%;
 
         // @media (max-width: 1150px) {
-        //     padding-left: 5%;
-        //     padding-right: 5%;
+        //     margin-left: 5%;
+        //     margin-right: 5%;
         // }
 
         @media (max-width: 800px) {
@@ -143,8 +146,9 @@ nav a {
         }
 
         img {
-            max-width: 75%;
-            
+            max-width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
 
 
@@ -157,19 +161,112 @@ nav a {
     }
 
     @media (max-width: 800px) {
+        max-width: 100%;
         flex-flow: column;
     }
 }
 
+.content-block2{
+    background-color: #313436;
+    // max-width: 75%;
+    min-width: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
+    // margin: 50px;
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    justify-content: center;
+    @media (max-width: 1150px) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    @media (max-width: 800px) {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+
+    .content {
+        box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+        position: relative;
+        min-width: 30%;
+        height: 100%;
+        margin: 10%;
+        background-color: white;
+        // border: 2px solid black;
+        border-radius: 10px;
+        color: Black;
+        margin: 30px;
+        padding-top: 20px;
+        // padding-bottom: 20px;
+        // display: flex;
+        align-items: center;
+        max-width: 50%;
+        // @media (max-width: 1150px) {
+        //     margin-left: 5%;
+        //     margin-right: 5%;
+        // }
+
+        @media (max-width: 800px) {
+            max-width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h3 {
+            letter-spacing: 1px;
+            font-weight: bold;
+            padding-top: 5px;
+            padding-bottom: 15px;
+            justify-content: center;
+            font-size: 3rem;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-decoration: none;
+            color: black;
+            border-bottom: 1px black solid;
+        }
+
+        p {
+            font-size: 1.75rem;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+        img {
+            // max-width: 75%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+
+        // .bcontent-icons {
+        //     background-color: darkgrey;
+        //     background-color: #9fa8da;
+        // }
+
+
+    }
+
+    @media (max-width: 800px) {
+        max-width: 100%;
+        flex-flow: column;
+    }
+}
 
 
 footer {
     display: flex;
     justify-content: center;
     background-color: #9fa8da;
-        // p{
-        //     padding-bottom: 
-        // }
+        p{
+            padding-bottom: 0px;
+        }
 }
 
 .collapsible {
@@ -197,6 +294,6 @@ footer {
   }
   
   .content-toggle {
-    display: hidden;
+    display: none;
     overflow: hidden;
   }
