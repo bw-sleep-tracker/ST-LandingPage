@@ -14,72 +14,106 @@
             justify-content: space-between;
             width: 33%;
 
+
             @media@tablet {
                 flex-flow: column;
-                width: 50%;
+                width: 33%;
+                justify-content: center;
                 margin: auto;
                 margin-top: 5%;
             }
 
-            @media@mobile {
+            @media @mobile {
                 flex-flow: column;
-                width: 100%;
+                justify-content: center;
+                width: 75%;
                 margin: auto;
                 margin-top: 5%;
             }
 
-            #sign-up{ 
-                z-index: 99; 
-                border: none;
-                outline: none; 
-                background-color:@muted-yellow;
-                color: @dark-gray; 
-                cursor: pointer; 
-                padding: 20px; 
-                border-radius: 10px; 
-                font-size: 4rem;
-                margin: 0, auto;
-    
-                @media@tablet {
-                    padding: 20px; 
-                    border-radius: 5x; 
-                    font-size: 2rem;
-                    margin-top: 4%;
-                    margin-bottom:3%;
+            .b1{
+                padding: 20px;
+                margin: auto;
+                @media @tablet {
+                    padding: 0;
                 }
-            }
-            
-            #sign-up:hover{
-                color: black;
-                background-color: white;
+                #sign-up{ 
+                    z-index: 99; 
+                    border: none;
+                    outline: none; 
+                    background-color:@muted-yellow;
+                    color: @dark-gray; 
+                    cursor: pointer; 
+                    padding: 20px; 
+                    border-radius: 10px; 
+                    font-size: 4rem;
+                    margin: 0, auto;
+
+                    @media (max-width: 1200px){
+                        font-size: 2rem;
+                    }
+        
+                    @media@tablet {
+                        padding: 20px; 
+                        border-radius: 5x; 
+                        font-size: 2rem;
+                        margin-top: 4%;
+                        margin-bottom:3%;
+                    }
+
+                }
+                
+                #sign-up:hover{
+                    color: black;
+                    background-color: white;
+                }
             }
 
-            #sign-in{ 
-                z-index: 99; 
-                border: none;
-                outline: none; 
-                background-color:@darker-purple;
-                color: white; 
-                cursor: pointer; 
-                padding: 20px; 
-                border-radius: 10px; 
-                font-size: 4rem;
-                margin: 0, auto;
-    
-                @media@tablet {
-                    margin-top: 5%;
-                    padding: 20px; 
-                    border-radius: 5x; 
-                    font-size: 2rem;
-                    margin-top: 4%;
-                    margin-bottom:3%;
+            .b2{
+                padding: 20px;
+                margin:auto;
+
+                @media @tablet {
+                    padding: 0;
+        
                 }
+                #sign-in{ 
+                    z-index: 99; 
+                    border: none;
+                    outline: none; 
+                    background-color:@darker-purple;
+                    color: white; 
+                    cursor: pointer; 
+                    padding: 20px; 
+                    border-radius: 10px; 
+                    font-size: 4rem;
+                    margin: 0, auto;
+
+                    @media (max-width: 1200px){
+                        font-size: 2rem;
+                    }
+        
+                    @media@tablet {
+                        margin-top: 5%;
+                        padding: 20px; 
+                        border-radius: 5x; 
+                        font-size: 2rem;
+                        margin-top: 4%;
+                        margin-bottom:3%;
+                    }
+
+                    @media (max-width: 1200px){
+                        font-size: 2rem;
+                    }
+                }
+                
+                #sign-in:hover{
+                    color: black;
+                    background-color: white;
+                }
+
             }
-            
-            #sign-in:hover{
-                color: black;
-                background-color: white;
-            }
+
         }
         .title-and-logo{
             display: flex;
@@ -192,7 +226,7 @@
             }
     
             .nav{
-                width: 25%;
+                width: 50%;
                 display: flex;
                 margin-left: auto;
                 justify-content: space-between;

@@ -188,7 +188,8 @@ img {
 @media (max-width: 800px) {
   .header .all-header .signBtn {
     flex-flow: column;
-    width: 50%;
+    width: 33%;
+    justify-content: center;
     margin: auto;
     margin-top: 5%;
   }
@@ -196,12 +197,22 @@ img {
 @media (max-width: 500px) {
   .header .all-header .signBtn {
     flex-flow: column;
-    width: 100%;
+    justify-content: center;
+    width: 75%;
     margin: auto;
     margin-top: 5%;
   }
 }
-.header .all-header .signBtn #sign-up {
+.header .all-header .signBtn .b1 {
+  padding: 20px;
+  margin: auto;
+}
+@media (max-width: 800px) {
+  .header .all-header .signBtn .b1 {
+    padding: 0;
+  }
+}
+.header .all-header .signBtn .b1 #sign-up {
   z-index: 99;
   border: none;
   outline: none;
@@ -213,8 +224,13 @@ img {
   font-size: 4rem;
   margin: 0, auto;
 }
+@media (max-width: 1200px) {
+  .header .all-header .signBtn .b1 #sign-up {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 800px) {
-  .header .all-header .signBtn #sign-up {
+  .header .all-header .signBtn .b1 #sign-up {
     padding: 20px;
     border-radius: 5x;
     font-size: 2rem;
@@ -222,11 +238,20 @@ img {
     margin-bottom: 3%;
   }
 }
-.header .all-header .signBtn #sign-up:hover {
+.header .all-header .signBtn .b1 #sign-up:hover {
   color: black;
   background-color: white;
 }
-.header .all-header .signBtn #sign-in {
+.header .all-header .signBtn .b2 {
+  padding: 20px;
+  margin: auto;
+}
+@media (max-width: 800px) {
+  .header .all-header .signBtn .b2 {
+    padding: 0;
+  }
+}
+.header .all-header .signBtn .b2 #sign-in {
   z-index: 99;
   border: none;
   outline: none;
@@ -238,8 +263,13 @@ img {
   font-size: 4rem;
   margin: 0, auto;
 }
+@media (max-width: 1200px) {
+  .header .all-header .signBtn .b2 #sign-in {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 800px) {
-  .header .all-header .signBtn #sign-in {
+  .header .all-header .signBtn .b2 #sign-in {
     margin-top: 5%;
     padding: 20px;
     border-radius: 5x;
@@ -248,7 +278,12 @@ img {
     margin-bottom: 3%;
   }
 }
-.header .all-header .signBtn #sign-in:hover {
+@media (max-width: 1200px) {
+  .header .all-header .signBtn .b2 #sign-in {
+    font-size: 2rem;
+  }
+}
+.header .all-header .signBtn .b2 #sign-in:hover {
   color: black;
   background-color: white;
 }
@@ -370,7 +405,7 @@ img {
   }
 }
 .header .all-header .bottom-line .nav {
-  width: 25%;
+  width: 50%;
   display: flex;
   margin-left: auto;
   justify-content: space-between;
