@@ -213,8 +213,7 @@ img {
 }
 @media (max-width: 500px) {
   .header .all-header .title-and-logo h1 {
-    font-size: 8rem;
-    margin: auto;
+    font-size: 6rem;
     text-align: center;
   }
 }
@@ -398,12 +397,16 @@ footer {
   height: 10%;
 }
 footer .foot {
-  width: 50%;
+  height: 100%;
+  width: 100%;
   margin: auto;
   text-align: center;
+  padding: 3px;
 }
 footer .foot p {
   font-size: 2rem;
+  padding-bottom: 4px;
+  padding-top: 4px;
 }
 .about {
   display: flex;
