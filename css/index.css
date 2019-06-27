@@ -451,6 +451,7 @@ footer .foot p {
 }
 .about .about-block .about-content .about-text {
   font-size: 1.8rem;
+  text-align: justify;
 }
 @media (max-width: 500px) {
   .about .about-block .about-content .about-text {
@@ -530,6 +531,7 @@ footer .foot p {
 }
 .main-content .content-block .content .content-text {
   font-size: 1.8rem;
+  text-align: justify;
 }
 @media (max-width: 500px) {
   .main-content .content-block .content .content-text {
