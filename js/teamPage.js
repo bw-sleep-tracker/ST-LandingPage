@@ -6,10 +6,10 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var contentToggle = this.nextElementSibling;
-    if (contentToggle.style.display === "none") {
-        contentToggle.style.display = "block";
-    } else {
+    if (contentToggle.style.display === "block") {
         contentToggle.style.display = "none";
+    } else {
+        contentToggle.style.display = "block";
     }
   });
 }
