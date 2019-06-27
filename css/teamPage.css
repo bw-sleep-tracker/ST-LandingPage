@@ -283,6 +283,7 @@ nav a {
 }
 .content-block .content img {
   max-width: 100%;
+  max-height: 350px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -356,6 +357,8 @@ nav a {
   padding-right: 20px;
 }
 .content-block2 .content img {
+  max-width: 100%;
+  max-height: 350px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
