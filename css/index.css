@@ -403,6 +403,11 @@ footer .foot p {
   padding: 20px 2%;
   color: #424242;
 }
+@media (max-width: 500px) {
+  .about {
+    padding-bottom: 0;
+  }
+}
 .about .about-block {
   display: flex;
   flex-direction: column;
@@ -415,20 +420,35 @@ footer .foot p {
 }
 @media (max-width: 1000px) {
   .about .about-block {
-    width: 85%;
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .about .about-block {
+    padding: 0;
   }
 }
 .about .about-block .about-title {
   font-size: 4.8rem;
   margin: 15px 0;
-  padding: 20px 0;
+  padding: 0 0 20px 0;
   border-bottom: 4px solid #6f78a8;
   text-align: center;
   font-weight: bolder;
   color: black;
 }
+@media (max-width: 500px) {
+  .about .about-block .about-title {
+    font-size: 2.4rem;
+  }
+}
 .about .about-block .about-content .about-text {
   font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .about .about-block .about-content .about-text {
+    font-size: 1.4rem;
+  }
 }
 .about .about-block .about-img {
   margin: 0 20px;
@@ -441,6 +461,11 @@ footer .foot p {
   .about .about-block .about-img {
     width: 100%;
     margin: 20px 0;
+  }
+}
+@media (max-width: 500px) {
+  .about .about-block .about-img {
+    margin: 5px 0;
   }
 }
 .about .about-block .about-second {
@@ -481,8 +506,13 @@ footer .foot p {
 }
 @media (max-width: 1000px) {
   .main-content .content-block {
-    width: 85%;
+    width: 90%;
     flex-flow: column wrap;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .content-block {
+    padding-bottom: 0;
   }
 }
 .main-content .content-block .content {
@@ -493,9 +523,15 @@ footer .foot p {
 .main-content .content-block .content .content-text {
   font-size: 1.8rem;
 }
+@media (max-width: 500px) {
+  .main-content .content-block .content .content-text {
+    font-size: 1.4rem;
+  }
+}
 @media (max-width: 1000px) {
   .main-content .content-block .content {
     width: 100%;
+    padding: 20px 0;
   }
 }
 .main-content .content-block .content-title {
@@ -504,6 +540,11 @@ footer .foot p {
   color: white;
   padding-bottom: 20px;
   border-bottom: 4px solid #9fa8da;
+}
+@media (max-width: 500px) {
+  .main-content .content-block .content-title {
+    font-size: 1.8rem;
+  }
 }
 .main-content .content-block .content-second {
   width: 40%;
@@ -515,8 +556,14 @@ footer .foot p {
   object-fit: cover;
 }
 @media (max-width: 1000px) {
+  .main-content .content-block .content-second .content-img {
+    width: 100%;
+    padding: 5px 0;
+  }
+}
+@media (max-width: 1000px) {
   .main-content .content-block .content-second {
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
 }

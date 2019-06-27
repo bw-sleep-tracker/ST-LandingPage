@@ -4,6 +4,10 @@
   padding: 20px 2%;
   color: @dark-gray;
 
+  @media @mobile {
+    padding-bottom: 0;
+  }
+
   .about-block {
     .flex(column);
     width: 80%;
@@ -12,23 +16,35 @@
     padding: 40px;
 
     @media (max-width: 1000px) {
-      width: 85%;
+      width: 90%;
+    }
+
+    @media @mobile {
+      padding: 0;
     }
 
     .about-title {
       font-size: 4.8rem;
       margin: 15px 0;
-      padding: 20px 0;
+      padding: 0 0 20px 0;
       border-bottom: 4px solid @darker-purple;
       text-align: center;
       font-weight: bolder;
       color: black;
+
+      @media @mobile {
+        font-size: 2.4rem;
+      }
     }
 
     .about-content {
       
       .about-text {
         font-size: 1.8rem;
+
+        @media @mobile {
+          font-size: 1.4rem;
+        }
       }
     }
 
@@ -42,6 +58,10 @@
       @media @tablet {
         width: 100%;
         margin: 20px 0;
+      }
+
+      @media @mobile {
+        margin: 5px 0;
       }
     }
 
@@ -77,8 +97,12 @@
     padding-bottom: 20px;
 
     @media (max-width: 1000px) {
-      width: 85%;
+      width: 90%;
       flex-flow: column wrap;
+    }
+
+    @media @mobile {
+      padding-bottom: 0;
     }
 
     .content {
@@ -88,10 +112,15 @@
 
       .content-text {
         font-size: 1.8rem;
+
+        @media @mobile {
+          font-size: 1.4rem;
+        }
       }
 
       @media (max-width: 1000px) {
         width: 100%;
+        padding: 20px 0;
       }
     }
 
@@ -101,6 +130,10 @@
       color: @white;
       padding-bottom: 20px;
       border-bottom: 4px solid @dark-purple;
+
+      @media @mobile {
+        font-size: 1.8rem;
+      }
     }
 
     .content-second {
@@ -111,10 +144,15 @@
         padding: 5px 5%;
         height: 300px;
         object-fit: cover;
+        
+        @media (max-width: 1000px) {
+          width: 100%;
+          padding: 5px 0;
+        }
       }
 
       @media (max-width: 1000px) {
-        width: 90%;
+        width: 100%;
         text-align: center;
       }
     }
