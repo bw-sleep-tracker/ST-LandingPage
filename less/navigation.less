@@ -8,6 +8,79 @@
     .all-header{
         width: 75%;
         margin: auto;
+        .signBtn{
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            width: 33%;
+
+            @media@tablet {
+                flex-flow: column;
+                width: 50%;
+                margin: auto;
+                margin-top: 5%;
+            }
+
+            @media@mobile {
+                flex-flow: column;
+                width: 100%;
+                margin: auto;
+                margin-top: 5%;
+            }
+
+            #sign-up{ 
+                z-index: 99; 
+                border: none;
+                outline: none; 
+                background-color:@muted-yellow;
+                color: @dark-gray; 
+                cursor: pointer; 
+                padding: 20px; 
+                border-radius: 10px; 
+                font-size: 4rem;
+                margin: 0, auto;
+    
+                @media@tablet {
+                    padding: 20px; 
+                    border-radius: 5x; 
+                    font-size: 2rem;
+                    margin-top: 4%;
+                    margin-bottom:3%;
+                }
+            }
+            
+            #sign-up:hover{
+                color: black;
+                background-color: white;
+            }
+
+            #sign-in{ 
+                z-index: 99; 
+                border: none;
+                outline: none; 
+                background-color:@darker-purple;
+                color: white; 
+                cursor: pointer; 
+                padding: 20px; 
+                border-radius: 10px; 
+                font-size: 4rem;
+                margin: 0, auto;
+    
+                @media@tablet {
+                    margin-top: 5%;
+                    padding: 20px; 
+                    border-radius: 5x; 
+                    font-size: 2rem;
+                    margin-top: 4%;
+                    margin-bottom:3%;
+                }
+            }
+            
+            #sign-in:hover{
+                color: black;
+                background-color: white;
+            }
+        }
         .title-and-logo{
             display: flex;
             flex-flow: row;
@@ -62,36 +135,6 @@
                     margin-bottom: 5%;
                 }
             }
-        }
-        #sign-up{ 
-            z-index: 99; 
-            border: none;
-            outline: none; 
-            background-color:@darker-purple;
-            color: white; 
-            cursor: pointer; 
-            padding: 20px; 
-            border-radius: 10px; 
-            font-size: 4rem;
-            margin: 0, auto;
-
-            @media@tablet {
-                margin-top: 5%;
-                padding: 20px; 
-                border-radius: 5x; 
-                font-size: 2rem;
-                margin-top: 4%;
-                margin-bottom:3%;
-                margin-left: 40%;
-            }
-            @media @mobile{
-                margin-left: 33%;
-            }
-        }
-        
-        #sign-up:hover{
-            color: black;
-            background-color: white;
         }
 
         .h2{
