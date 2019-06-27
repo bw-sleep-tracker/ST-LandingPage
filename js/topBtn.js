@@ -1,6 +1,5 @@
-var tBtn = document.querySelector('#top-btn');
+var tBtn = document.querySelector('.top-btn');
 var  more = document.querySelector('.bottom-line a');
-var abt = document.querySelector('.about');
 
 window.addEventListener('scroll', open);
 
