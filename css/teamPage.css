@@ -187,14 +187,14 @@ header {
   text-shadow: horizontal-offset vertical-offset blur color;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
-nav {
+.teamPageNav {
   max-width: 100%;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 20px;
 }
 @media (max-width: 800px) {
-  nav {
+  .teamPageNav {
     display: flex;
     flex-flow: column;
     padding-top: 10px;
