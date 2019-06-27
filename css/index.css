@@ -222,11 +222,6 @@ img {
   width: 25%;
   height: auto;
 }
-@media (max-width: 1175px) {
-  .header .all-header .title-and-logo img {
-    display: none;
-  }
-}
 @media (max-width: 800px) {
   .header .all-header .title-and-logo img {
     width: 15%;
@@ -242,6 +237,38 @@ img {
     margin: auto;
     margin-bottom: 5%;
   }
+}
+.header .all-header #sign-up {
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #6f78a8;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 4rem;
+  margin: 0, auto;
+}
+@media (max-width: 800px) {
+  .header .all-header #sign-up {
+    margin-top: 5%;
+    padding: 20px;
+    border-radius: 5x;
+    font-size: 2rem;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    margin-left: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .header .all-header #sign-up {
+    margin-left: 33%;
+  }
+}
+.header .all-header #sign-up:hover {
+  color: black;
+  background-color: white;
 }
 .header .all-header .h2 {
   display: flex;
@@ -364,22 +391,6 @@ img {
   padding: 15px;
   border-radius: 10px;
   font-size: 18px;
-}
-#sign-up {
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #6f78a8;
-  color: white;
-  cursor: pointer;
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 4rem;
-  margin: 0, auto;
-}
-#sign-up:hover {
-  color: black;
-  background-color: white;
 }
 footer {
   background-color: #9fa8da;

@@ -14,13 +14,13 @@
             justify-content: space-between;
     
             
-            @media(max-width: 800px) {
+            @media@tablet {
                 border-bottom: .5rem solid @muted-yellow;
                 flex-flow: column-reverse;
                 justify-content: space-evenly;
             }
     
-            @media(max-width: 500px) {
+            @media @mobile {
                 flex-flow: row-reverse wrap;
                 justify-content: space-evenly;
             }
@@ -30,14 +30,14 @@
                 font-style: italic;
                 font-family: 'Abril Fatface';
     
-                @media(max-width: 800px) {
+                @media@tablet {
                     font-size: 8rem;
                     margin: auto;
                     text-align: center;
                     margin-bottom: 5%;
                 }
     
-                @media(max-width: 500px) {
+                @media @mobile {
                     font-size: 8rem;
                     margin: auto;
                     text-align: center;
@@ -47,18 +47,16 @@
                 width: 25%;
                 height: auto;
     
-                @media(max-width: 1175px) {
-                    display: none;
-                }
     
-                @media(max-width: 800px) {
+                @media@tablet {
                     width: 15%;
                     height: auto;
                     margin: auto;
                     margin-bottom: 10%;
+
                 }
     
-                @media(max-width: 500px) {
+                @media @mobile {
                     width: 20%;
                     height: auto;
                     margin: auto;
@@ -66,18 +64,49 @@
                 }
             }
         }
+        #sign-up{ 
+            z-index: 99; 
+            border: none;
+            outline: none; 
+            background-color:@darker-purple;
+            color: white; 
+            cursor: pointer; 
+            padding: 20px; 
+            border-radius: 10px; 
+            font-size: 4rem;
+            margin: 0, auto;
+
+            @media@tablet {
+                margin-top: 5%;
+                padding: 20px; 
+                border-radius: 5x; 
+                font-size: 2rem;
+                margin-top: 4%;
+                margin-bottom:3%;
+                margin-left: 40%;
+            }
+            @media @mobile{
+                margin-left: 33%;
+            }
+        }
+        
+        #sign-up:hover{
+            color: black;
+            background-color: white;
+        }
+
         .h2{
             display: flex;
             flex-direction: row wrap;
             width: 50%;
             margin-left: 50%;
             margin-top: 5%;
-            @media(max-width: 800px){
+            @media@tablet{
                 width: 100%;
                 margin-left: 0px;
                 margin-top: 2%;
             }
-            @media(max-width: 500px){
+            @media@mobile{
                 width: 100%;
                 margin-left: 0px;
                 margin-top: 2%;
@@ -91,13 +120,13 @@
                 font-style: italic;
                 text-align: right;
     
-                @media(max-width: 800px){
+                @media@tablet{
                     margin-top: 5%;
                     font-size: 3rem;
                     text-align: center;
                     font-style: normal;
                 }
-                 @media(max-width: 500px){
+                 @media@mobile{
                      margin-top: 5%;
                      font-size: 3rem;
                      text-align: center;
@@ -112,11 +141,11 @@
             margin-top: 5%;
             width: 100%;
     
-            @media(max-width: 800px) {
+            @media@tablet {
                 margin-top: 5%;
             }
     
-            @media(max-width: 500px) {
+            @media@mobile {
                 border-top: none;
             }
     
@@ -126,12 +155,12 @@
                 margin-left: auto;
                 justify-content: space-between;
                 margin-top: 2%;
-                @media(max-width: 800px) {
+                @media@tablet {
                     margin:auto;
                     width: 100%;
                     flex-flow: column;
                 }
-                @media(max-width: 500px) {
+                @media@mobile {
                     width: 100%;
                     flex-flow: column;
                 }
@@ -141,14 +170,14 @@
                     text-decoration: none;
                     font-style: italic;
     
-                    @media(max-width: 800px) {
+                    @media@tablet {
                         font-size: 3rem;
                         margin: auto;
                         padding-top: 10%;
                         padding-bottom: 10%;
                     }
     
-                    @media(max-width: 500px) {
+                    @media@mobile{
                         font-size: 3rem;
                         margin: auto;
                         padding-top: 10%;
@@ -186,20 +215,3 @@
 }
 
 
-#sign-up{ 
-    z-index: 99; 
-    border: none;
-    outline: none; 
-    background-color:@darker-purple;
-    color: white; 
-    cursor: pointer; 
-    padding: 20px; 
-    border-radius: 10px; 
-    font-size: 4rem;
-    margin: 0, auto;
-}
-
-#sign-up:hover{
-    color: black;
-    background-color: white;
-}
